@@ -49,7 +49,7 @@ Mise en place d'un nœud Elasticsearch
 L'une des premières difficultés auxquelles on se heurte souvent lors du démarrage est la configuration de la sécurité. À partir de la version 8.0, la sécurité est activée par défaut. Par conséquent, nous devons nous assurer que le certificat CA est correctement configuré en utilisant un nœud "setup" pour établir les certificats. Activer la sécurité est une pratique recommandée et ne devrait pas être désactivée, même dans des environnements de POC.
 
 
-<code>
+```yaml
 version: "3.8"
 
 
@@ -129,7 +129,7 @@ services:
      interval: 1s
      timeout: 5s
      retries: 120
-</code>
+```
 
 
 At the top of the docker-compose.yml we set the compose version, followed by the volumes and default networking configuration that will be used throughout our different containers.
